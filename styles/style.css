@@ -1,1 +1,268 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 95px 50px;
+}
+.menu-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+}
+.menu-list-item {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.header-logo {
+  width: 130px;
+}
+
+.address {
+  font-size: 18px;
+  max-width: 240px;
+  justify-self: end;
+  font-style: normal;
+}
+.cover {
+  position: relative;
+  padding: 165px 22px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  display: block;
+  background-color: black;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+.title span {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+
+  letter-spacing: 28px;
+}
+
+.title .one {
+  display: flex;
+  align-items: start;
+}
+
+.title .two {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.title .three {
+  display: flex;
+  justify-content: end;
+  margin-top: 15px;
+  margin-right: 3px;
+}
+
+.description {
+  display: flex;
+  margin-top: 106px;
+  justify-content: space-between;
+  align-items: center;
+}
+.description-text {
+  color: white;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+.description-btn {
+  color: white;
+  text-transform: uppercase;
+  background: rgba(1, 1, 1, 0);
+  border: 1px solid white;
+  padding: 12px 32px;
+  margin-right: 28px;
+  font-size: 22px;
+}
+.lots {
+  margin-top: 182px;
+  margin-left: 24px;
+}
+.lots-title {
+  list-style: none;
+  margin-left: 38px;
+
+  font-weight: 700;
+
+  font-size: 40px;
+
+  text-transform: uppercase;
+}
+.lots-cards {
+  margin-top: 27px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+.lots-cards-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.lot-1 {
+  background-image: url(../images/card-lot-01.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.lot-2 {
+  background-image: url(../images/card-lot-02.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.lot-3 {
+  background-image: url(../images/card-lot-03.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.lots-cards-item a {
+  height: 100%;
+}
+
+.lots-cards-item article {
+  height: 100%;
+}
+.card-link {
+  text-decoration: none;
+}
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 48px 40px;
+  justify-content: space-between;
+}
+
+.card-title {
+  color: white;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+}
+
+.card-text {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.lots-more-link {
+  margin-top: 4px;
+  margin-left: 40px;
+
+  font-weight: 400;
+
+  font-size: 20px;
+
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.about {
+  margin-left: 34px;
+  margin-top: 155px;
+  display: flex;
+  gap: 72px;
+}
+.about-logo {
+  margin-left: 56px;
+  background-color: #000000;
+  padding: 65px 48px 62px 50px;
+  border-radius: 50%;
+  width: 240px;
+  height: 240px;
+}
+
+.about-logo img {
+  width: 140px;
+}
+.about-text {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.about-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.about-description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-description {
+  font-weight: 400;
+
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 180px;
+  justify-content: space-between;
+  margin-bottom: 82px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
+
+.footer-menu-list-item {
+  font-size: 18px;
+}
+
+.socials-list {
+  display: flex;
+  list-style: none;
+  gap: 48px;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+}
+
+.footer .address {
+  width: 260px;
+}
